@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         nameTextView = findViewById(R.id.editTextName)
         ageTextView = findViewById(R.id.editTextAge)
-        heightTextView = findViewById(R.id.editTextHeight)
-        weightTextView = findViewById(R.id.editTextWeight)
+        heightTextView = findViewById(R.id.editTextCourse)
+        weightTextView = findViewById(R.id.editTextGroup)
         btnEdit = findViewById(R.id.buttonEdit)
 
         fun updateView() {

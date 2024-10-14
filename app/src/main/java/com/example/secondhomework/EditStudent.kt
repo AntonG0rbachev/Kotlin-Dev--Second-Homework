@@ -41,8 +41,8 @@ class EditStudent : AppCompatActivity() {
 
         nameET = findViewById(R.id.editTextName)
         ageET = findViewById(R.id.editTextAge)
-        weightET = findViewById(R.id.editTextWeight)
-        heightET = findViewById(R.id.editTextHeight)
+        weightET = findViewById(R.id.editTextGroup)
+        heightET = findViewById(R.id.editTextCourse)
 
         if (isEdit!!) {
             nameET.setText(intent.getStringExtra("name"))

@@ -9,70 +9,114 @@
 
     <TextView
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:ems="10"
+        android:layout_marginTop="40dp"
         android:enabled="true"
         android:fontFamily="@font/play_bold"
         android:text="Имя:"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSurname"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
 
     <TextView
         android:id="@+id/editTextAge"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/play_bold"
-        android:text="Возраст:"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextName"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        android:text="Дата рождения:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPatronymic"
+        app:layout_constraintStart_toStartOf="@+id/editTextPatronymic"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPatronymic" />
 
     <TextView
-        android:id="@+id/editTextHeight"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextCourse"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:text="Рост:"
-        android:textSize="34sp"
+        android:text="Курс:"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextAge"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextAge"
         app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
 
     <TextView
-        android:id="@+id/editTextWeight"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextGroup"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:text="Вес:"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextHeight"
+        android:text="Группа:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCourse"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextHeight"
-        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+        app:layout_constraintStart_toStartOf="@+id/editTextCourse"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourse" />
 
     <Button
         android:id="@+id/buttonEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1E88E5"
         android:text="Изменить"
-        app:layout_constraintEnd_toEndOf="@+id/editTextWeight"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/editTextWeight"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextExam"
+        app:layout_constraintStart_toStartOf="@+id/editTextExam"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExam" />
+
+    <TextView
+        android:id="@+id/editTextSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Фамилия"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextPatronymic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Отчество"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/editTextSubGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Подгруппа:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGroup"
+        app:layout_constraintStart_toStartOf="@+id/editTextGroup"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
+
+    <TextView
+        android:id="@+id/editTextExam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:text="Номер билета:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSubGroup"
+        app:layout_constraintStart_toStartOf="@+id/editTextSubGroup"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

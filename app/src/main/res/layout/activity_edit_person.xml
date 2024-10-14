@@ -13,7 +13,7 @@
         android:layout_marginTop="96dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:hint="Имя"
+        android:hint="@string/name_label"
         android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <EditText
-        android:id="@+id/editTextHeight"
+        android:id="@+id/editTextCourse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
 
     <EditText
-        android:id="@+id/editTextWeight"
+        android:id="@+id/editTextGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -61,10 +61,10 @@
         android:hint="Вес"
         android:inputType="number"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextHeight"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCourse"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextHeight"
-        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+        app:layout_constraintStart_toStartOf="@+id/editTextCourse"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCourse" />
 
     <Button
         android:id="@+id/button3"
@@ -74,7 +74,7 @@
         android:layout_marginTop="68dp"
         android:text="Отменить"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
 
     <Button
         android:id="@+id/button4"
@@ -86,6 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

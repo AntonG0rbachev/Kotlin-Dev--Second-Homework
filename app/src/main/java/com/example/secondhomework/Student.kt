@@ -6,8 +6,12 @@ import androidx.annotation.StringRes
 @SuppressLint("SupportAnnotationUsage")
 data class Student(
     @StringRes
-    val PersName: String,
-    val PersAge: Int,
-    val PersHeight: Int,
-    val PersWeight: Int
+    val studentSurname: String,
+    val studentName: String,
+    val studentPatronymic: String,
+    val studentAge: String,
+    val studentCourse: Int,
+    val studentGroup: String,
+    val studentSubGroup: Int,
+    val studentExam: Int
 )

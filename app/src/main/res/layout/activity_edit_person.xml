@@ -2,77 +2,90 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".EditStudent">
 
-    <TextView
+    <EditText
         android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:ems="10"
-        android:enabled="true"
         android:fontFamily="@font/play_bold"
-        android:text="Имя:"
-        android:textSize="34sp"
+        android:hint="Имя"
+        android:inputType="text"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/editTextAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:text="Возраст:"
-        android:textSize="34sp"
+        android:hint="Возраст"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
-    <TextView
+    <EditText
         android:id="@+id/editTextHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:text="Рост:"
-        android:textSize="34sp"
+        android:hint="Рост"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextAge"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextAge"
         app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
 
-    <TextView
+    <EditText
         android:id="@+id/editTextWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
         android:fontFamily="@font/play_bold"
-        android:text="Вес:"
-        android:textSize="34sp"
+        android:hint="Вес"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextHeight"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextHeight"
         app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
 
     <Button
-        android:id="@+id/buttonEdit"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="Изменить"
-        app:layout_constraintEnd_toEndOf="@+id/editTextWeight"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="@+id/editTextWeight"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="68dp"
+        android:text="Отменить"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="60dp"
+        android:text="Сохранить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/editTextWeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

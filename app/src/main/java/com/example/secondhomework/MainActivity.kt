@@ -12,7 +12,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-private const val EXTRA_STUD_EDIT = "com.example.oneperson_blog.stud_edit"
+private const val EXTRA_STUD_EDIT = "com.example.secondhomework.stud_edit"
 
 class MainActivity : AppCompatActivity() {
 
@@ -89,7 +89,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         findViewById<Button>(R.id.buttonEdit).setOnClickListener {
-            //val create = isCreate
             val intent = EditStudent.newIntent(
                 this@MainActivity,
                 isCreate,

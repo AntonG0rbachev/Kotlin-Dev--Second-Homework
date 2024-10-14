@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/editTextName"
+        android:id="@+id/textName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -16,25 +16,25 @@
         android:fontFamily="@font/play_bold"
         android:text="Имя:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextSurname"
+        app:layout_constraintEnd_toEndOf="@+id/textSurname"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
+        app:layout_constraintStart_toStartOf="@+id/textSurname"
+        app:layout_constraintTop_toBottomOf="@+id/textSurname" />
 
     <TextView
-        android:id="@+id/editTextAge"
+        android:id="@+id/textAge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/play_bold"
         android:text="Дата рождения:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPatronymic"
-        app:layout_constraintStart_toStartOf="@+id/editTextPatronymic"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPatronymic" />
+        app:layout_constraintEnd_toEndOf="@+id/textPatronymic"
+        app:layout_constraintStart_toStartOf="@+id/textPatronymic"
+        app:layout_constraintTop_toBottomOf="@+id/textPatronymic" />
 
     <TextView
-        android:id="@+id/editTextCourse"
+        android:id="@+id/textCourse"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -42,13 +42,13 @@
         android:fontFamily="@font/play_bold"
         android:text="Курс:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAge"
+        app:layout_constraintEnd_toEndOf="@+id/textAge"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextAge"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
+        app:layout_constraintStart_toStartOf="@+id/textAge"
+        app:layout_constraintTop_toBottomOf="@+id/textAge" />
 
     <TextView
-        android:id="@+id/editTextGroup"
+        android:id="@+id/textGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -56,10 +56,10 @@
         android:fontFamily="@font/play_bold"
         android:text="Группа:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextCourse"
+        app:layout_constraintEnd_toEndOf="@+id/textCourse"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextCourse"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCourse" />
+        app:layout_constraintStart_toStartOf="@+id/textCourse"
+        app:layout_constraintTop_toBottomOf="@+id/textCourse" />
 
     <Button
         android:id="@+id/buttonEdit"
@@ -69,12 +69,12 @@
         android:backgroundTint="#1E88E5"
         android:text="Изменить"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextExam"
-        app:layout_constraintStart_toStartOf="@+id/editTextExam"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExam" />
+        app:layout_constraintEnd_toEndOf="@+id/textExam"
+        app:layout_constraintStart_toStartOf="@+id/textExam"
+        app:layout_constraintTop_toBottomOf="@+id/textExam" />
 
     <TextView
-        android:id="@+id/editTextSurname"
+        android:id="@+id/textSurname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -85,38 +85,38 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/editTextPatronymic"
+        android:id="@+id/textPatronymic"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Отчество"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextName"
-        app:layout_constraintStart_toStartOf="@+id/editTextName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+        app:layout_constraintEnd_toEndOf="@+id/textName"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
 
     <TextView
-        android:id="@+id/editTextSubGroup"
+        android:id="@+id/textSubGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
         android:text="Подгруппа:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextGroup"
-        app:layout_constraintStart_toStartOf="@+id/editTextGroup"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
+        app:layout_constraintEnd_toEndOf="@+id/textGroup"
+        app:layout_constraintStart_toStartOf="@+id/textGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textGroup" />
 
     <TextView
-        android:id="@+id/editTextExam"
+        android:id="@+id/textExam"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
         android:text="Номер билета:"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextSubGroup"
-        app:layout_constraintStart_toStartOf="@+id/editTextSubGroup"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSubGroup" />
+        app:layout_constraintEnd_toEndOf="@+id/textSubGroup"
+        app:layout_constraintStart_toStartOf="@+id/textSubGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textSubGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,10 +39,10 @@ class EditStudent : AppCompatActivity() {
 
         val isEdit = intent?.getBooleanExtra("edit_mode", false)
 
-        nameET = findViewById(R.id.editTextName)
-        ageET = findViewById(R.id.editTextAge)
-        weightET = findViewById(R.id.editTextGroup)
-        heightET = findViewById(R.id.editTextCourse)
+        nameET = findViewById(R.id.textName)
+        ageET = findViewById(R.id.textAge)
+        weightET = findViewById(R.id.textGroup)
+        heightET = findViewById(R.id.textCourse)
 
         if (isEdit!!) {
             nameET.setText(intent.getStringExtra("name"))

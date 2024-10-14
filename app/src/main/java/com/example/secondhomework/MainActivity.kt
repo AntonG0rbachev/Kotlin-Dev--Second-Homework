@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        nameTextView = findViewById(R.id.editTextName)
-        ageTextView = findViewById(R.id.editTextAge)
-        heightTextView = findViewById(R.id.editTextCourse)
-        weightTextView = findViewById(R.id.editTextGroup)
+        nameTextView = findViewById(R.id.textName)
+        ageTextView = findViewById(R.id.textAge)
+        heightTextView = findViewById(R.id.textCourse)
+        weightTextView = findViewById(R.id.textGroup)
         btnEdit = findViewById(R.id.buttonEdit)
 
         fun updateView() {

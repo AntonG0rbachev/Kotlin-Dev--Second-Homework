@@ -52,7 +52,7 @@ class EditStudent : AppCompatActivity() {
         }
 
 
-        saveButton = findViewById(R.id.button4)
+        saveButton = findViewById(R.id.buttonSave)
         saveButton.setOnClickListener{
             if (nameET.text.isNullOrEmpty() || ageET.text.isNullOrEmpty() || weightET.text.isNullOrEmpty() || heightET.text.isNullOrEmpty()){
                 Toast.makeText(this, "Все поля обязательны", Toast.LENGTH_SHORT).show()
@@ -71,7 +71,7 @@ class EditStudent : AppCompatActivity() {
             }
         }
 
-        cancelButton = findViewById(R.id.button3)
+        cancelButton = findViewById(R.id.buttonCancel)
         cancelButton.setOnClickListener {
             setResult(Activity.RESULT_CANCELED)
             finish()

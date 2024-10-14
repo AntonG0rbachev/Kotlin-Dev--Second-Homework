@@ -6,86 +6,132 @@
     android:layout_height="match_parent"
     tools:context=".EditStudent">
 
-    <EditText
-        android:id="@+id/editTextName"
+    <Button
+        android:id="@+id/buttonCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#E53935"
+        android:text="Отменить"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextExam"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExam" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#43A047"
+        android:text="Сохранить"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExam" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:fontFamily="@font/play_bold"
-        android:hint="@string/name_label"
+        android:hint="Фамилия"
         android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextAge"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextPatronymic"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:fontFamily="@font/play_bold"
-        android:hint="Возраст"
-        android:inputType="number"
+        android:hint="Отчество"
+        android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextName"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextName"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <EditText
-        android:id="@+id/editTextCourse"
-        android:layout_width="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:fontFamily="@font/play_bold"
-        android:hint="Рост"
+        android:hint="Имя"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Дата рождения"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextPatronymic"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPatronymic" />
+
+    <EditText
+        android:id="@+id/editTextCourse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Курс"
         android:inputType="number"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAge"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editTextAge"
         app:layout_constraintTop_toBottomOf="@+id/editTextAge" />
 
     <EditText
         android:id="@+id/editTextGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:fontFamily="@font/play_bold"
-        android:hint="Вес"
-        android:inputType="number"
+        android:hint="Группа"
+        android:inputType="text"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextCourse"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextCourse"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextCourse" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextSubGroup"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="68dp"
-        android:text="Отменить"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Подгруппа"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGroup"
+        app:layout_constraintStart_toStartOf="@+id/editTextGroup"
         app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextExam"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="60dp"
-        android:text="Сохранить"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Номер билета"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextGroup" />
+        app:layout_constraintStart_toStartOf="@+id/editTextSubGroup"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSubGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

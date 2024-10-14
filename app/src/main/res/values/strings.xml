@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">SecondHomework</string>
-    <string name="name_label">Имя</string>
+    <string name="name_label">Имя:</string>
+    <string name="change_text">Изменить</string>
+    <string name="surname_label">Фамилия:</string>
+    <string name="patronymic_label">Отчество:</string>
+    <string name="sub_group_label">Подгруппа:</string>
+    <string name="exam_label">Номер билета:</string>
+    <string name="group_label">Группа:</string>
+    <string name="course_label">Курс:</string>
+    <string name="age_label">Дата рождения:</string>
+    <string name="save_text">Сохранить</string>
+    <string name="cancel_text">Отменить</string>
 </resources>

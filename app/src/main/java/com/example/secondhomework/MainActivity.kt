@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var subGroupTextView: TextView
     private lateinit var examTextView: TextView
 
-    var student = Student(
+    private var student = Student(
         "Фамилия",
         "Имя",
         "Отчество",
@@ -57,16 +57,10 @@ class MainActivity : AppCompatActivity() {
         examTextView = findViewById(R.id.textExam)
         btnEdit = findViewById(R.id.buttonEdit)
 
-        @SuppressLint("SetTextI18n")
+        setStudentInfo()
+
         fun updateView() {
-            surnameTextView.text = "Фамилия: ${student.studentSurname}"
-            nameTextView.text = "Имя: ${student.studentName}"
-            patronymicTextView.text = "Отчество: ${student.studentPatronymic}"
-            ageTextView.text = "Дата рождения: ${student.studentAge}"
-            courseTextView.text = "Курс: ${student.studentCourse}"
-            groupTextView.text = "Группа: ${student.studentGroup}"
-            subGroupTextView.text = "Подгруппа: ${student.studentSubGroup}"
-            examTextView.text = "Номер билета: ${student.studentExam}"
+            setStudentInfo()
         }
 
         var isCreate = false
@@ -104,5 +98,16 @@ class MainActivity : AppCompatActivity() {
             resultLauncher.launch(intent)
         }
 
+    }
+
+    private fun setStudentInfo() {
+        surnameTextView.text = "Фамилия: ${student.studentSurname}"
+        nameTextView.text = "Имя: ${student.studentName}"
+        patronymicTextView.text = "Отчество: ${student.studentPatronymic}"
+        ageTextView.text = "Дата рождения: ${student.studentAge}"
+        courseTextView.text = "Курс: ${student.studentCourse}"
+        groupTextView.text = "Группа: ${student.studentGroup}"
+        subGroupTextView.text = "Подгруппа: ${student.studentSubGroup}"
+        examTextView.text = "Номер билета: ${student.studentExam}"
     }
 }

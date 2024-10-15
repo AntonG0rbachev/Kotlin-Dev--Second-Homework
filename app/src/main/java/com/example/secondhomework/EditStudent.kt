@@ -107,7 +107,12 @@ class EditStudent : AppCompatActivity() {
                 || surnameET.text.toString().contains(Regex("[0-9]+"))
                 || patronymicET.text.toString().contains(Regex("[0-9]+"))
                 ) {
-                Toast.makeText(this, "В имени не допустимо использование цифр", Toast.LENGTH_SHORT).show()
+                Toast
+                    .makeText(
+                    this,
+                    "В имени не допустимо использование цифр",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else if (!tryParseDate(ageET.text.toString(), DateTimeFormatter.ofPattern("dd-MM-yyyy"))) {
                 Toast
                     .makeText(

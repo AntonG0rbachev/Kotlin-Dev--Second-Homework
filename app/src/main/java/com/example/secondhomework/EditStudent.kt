@@ -108,13 +108,13 @@ class EditStudent : AppCompatActivity() {
                 || patronymicET.text.toString().contains(Regex("[0-9]+"))
                 ) {
                 Toast.makeText(this, "В имени не допустимо использование цифр", Toast.LENGTH_SHORT).show()
-//            } else if (!tryParseDate(ageET.text.toString(), DateTimeFormatter.ofPattern("dd-MM-yyyy"))) {
-//                Toast
-//                    .makeText(
-//                    this,
-//                    "Дата рождения должна быть представлена в виде 'дд-мм-гггг'",
-//                    Toast.LENGTH_SHORT
-//                ).show()
+            } else if (!tryParseDate(ageET.text.toString(), DateTimeFormatter.ofPattern("dd-MM-yyyy"))) {
+                Toast
+                    .makeText(
+                    this,
+                    "Дата рождения должна быть представлена в виде 'дд-мм-гггг'",
+                    Toast.LENGTH_SHORT
+                ).show()
             } else {
                 val data = Intent().apply {
                     putExtra(EXTRA_STUD_EDIT, true)

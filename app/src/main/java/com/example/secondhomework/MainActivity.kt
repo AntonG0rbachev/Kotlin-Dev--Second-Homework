@@ -27,14 +27,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var examTextView: TextView
 
     private var student = Student(
-        "Фамилия",
-        "Имя",
-        "Отчество",
-        "Дата рождения",
-        1,
-        "Группа",
-        1,
-        1
+        "НЕ ЗАДАНО",
+        "НЕ ЗАДАНО",
+        "НЕ ЗАДАНО",
+        "НЕ ЗАДАНО",
+        0,
+        "НЕ ЗАДАНО",
+        0,
+        0
         )
 
     override fun onCreate(savedInstanceState: Bundle?) {
